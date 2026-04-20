@@ -1,0 +1,837 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NETFLIX</title>
+  <link rel="shortcut icon" href="image/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="css/specific.css">
+  <!-- <link rel="stylesheet" href="css/tablet.css" media="screen and (min-width: 780px) and (max-width: 1280px)">
+  <link rel="stylesheet" href="css/mobile.css" media="screen and (max-width: 779px)"> -->
+  <script src="js/jquery-1.12.4.min.js"></script>
+  <script src="js/jquery-ui.min.js"></script>
+  <script src="js/specific.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/color-thief/2.3.0/color-thief.umd.js"></script>
+</head>
+
+<body>
+
+  <header id="header">
+    <div class="header-inner">
+      <div class="header-top">
+        <h1>
+          <a href="index.html">
+            <img src="image/Netflix_2015_logo.svg" alt="NEFLIX">
+          </a>
+        </h1>
+        <button class="login-btn">로그인</button>
+      </div>
+    </div>
+  </header>
+
+  <aside id="aside" class="area">
+    <h2 class="blind">Search</h2>
+
+    <nav class="gnb">
+      <a href="search.html">검색</a>
+      <a href="specific.html">콘텐츠</a>
+      <a href="#">이벤트</a>
+      <a href="#">커뮤니티</a>
+      <a href="#">문의</a>
+    </nav>
+
+    <button class="menu-btn" aria-label="메뉴 열기">
+      <svg class="hamburger" viewBox="0 0 100 100" width="40" height="40">
+        <line class="line top" x1="20" y1="35" x2="80" y2="35" />
+        <line class="line middle" x1="20" y1="50" x2="80" y2="50" />
+        <line class="line bottom" x1="20" y1="65" x2="80" y2="65" />
+      </svg>
+    </button>
+
+  </aside>
+
+  <main id="main">
+    <div class="main-inner">
+
+      <section class="cont-1">
+        <div class="cont-1-inner">
+          <h3>지금 핫한 콘텐츠</h3>
+          <ul class="content">
+
+            <li>
+              <a href="#">
+                <div class="img-wrapper">
+                  <img src="image/hot(1).jpg" alt="사건 수사대Q">
+                </div>
+                <div class="info">
+                  <div class="info-header">
+                    <h4>사건 수사대 Q</h4>
+                    <div class="meta-tags">
+                      <span>2025</span>
+                      <span class="badge">시즌 1개</span>
+                      <span class="badge">18+</span>
+                      <span>범죄 스릴러 시리즈</span>
+                    </div>
+                  </div>
+                  <div class=" info-body">
+                    <p class="desc">
+                      과거의 실수로 좌천된 형사 칼 뫼르크가 미해결 사건 전담반 '부서 Q'를 맡게 된다.
+                      에든버러의 어두운 이면 속에 버려진 사건들을 파헤치며, 그는 잊힌 진실과 자신의 트라우마를 동시에 마주한다.
+                    </p>
+                    <div class="details">
+                      <p><span>출연:</span> 매슈 구드, 알렉스 저제크, 켈리 맥도널드</p>
+                      <p><span>크리에이터:</span> 스콧 프랭크</p>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </li>
+
+            <li>
+              <a href="#">
+                <div class="img-wrapper">
+                  <img src="image/hot(2).jpg" alt="프런티어">
+                </div>
+                <div class="info">
+                  <div class="info-header">
+                    <h4>프런티어</h4>
+                    <div class="meta-tags">
+                      <span>2025</span>
+                      <span class="badge">새로운 에피소드</span>
+                      <span class="badge">18+</span>
+                      <span>액션 서사시</span>
+                    </div>
+                  </div>
+                  <div class="info-body">
+                    <p class="desc">
+                      법도 질서도 없는 무법지대, 부와 명예를 차지하기 위해 경계선으로 모여든 개척자들.
+                      살아남기 위해 서로를 배신하고 연대하며 새로운 역사를 써 내려가는 이들의 처절한 기록.
+                    </p>
+                    <div class="details">
+                      <p><span>출연:</span> 제이슨 모모아, 앨런 암스트롱</p>
+                      <p><span>크리에이터:</span> 롭 블랙키, 피터 블랙키</p>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </li>
+
+            <li>
+              <a href="#">
+                <div class="img-wrapper">
+                  <img src="image/hot(3).jpg" alt="스틸 볼 런: 죠죠의 기묘한 모험">
+                </div>
+                <div class="info">
+                  <div class="info-header">
+                    <h4>스틸 볼 런: 죠죠의 기묘한 모험</h4>
+                    <div class="meta-tags">
+                      <span>2026</span>
+                      <span class="badge">최신 등록</span>
+                      <span class="badge">15+</span>
+                      <span>판타지/액션 애니메이션</span>
+                    </div>
+                  </div>
+                  <div class="info-body">
+                    <p class="desc">
+                      19세기 말 미국, 대륙을 횡단하는 사상 최대의 경마 대회 '스틸 볼 런'이 개최된다.
+                      수수께끼의 유해를 둘러싼 음모와 스탠드 유저들의 혈투가 광활한 사막 위에서 펼쳐진다.
+                    </p>
+                    <div class="details">
+                      <p><span>출연:</span> 성우 카미야 히로시, 미야노 마모루</p>
+                      <p><span>크리에이터:</span> 아라키 히로히코</p>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </li>
+
+            <li>
+              <a href="#">
+                <div class="img-wrapper">
+                  <img src="image/hot(4).jpg" alt="레이디 두아">
+                </div>
+                <div class="info">
+                  <div class="info-header">
+                    <h4>레이디 두아</h4>
+                    <div class="meta-tags">
+                      <span>2026</span>
+                      <span class="badge">넷플릭스 시리즈</span>
+                      <span class="badge">15+</span>
+                      <span>미스터리 / 로맨스</span>
+                    </div>
+                  </div>
+                  <div class="info-body">
+                    <p class="desc">
+                      가짜일지라도 명품이 되고 싶었던 여자 사라킴. 어디서나 그녀의 이름을 들을 수 있지만 어디서도 진짜 그녀를 만날 수는 없다.
+                      예리한 시선과 끈질긴 집념의 형사 무경이 그 미스터리한 정체를 추적한다.
+                    </p>
+                    <div class="details">
+                      <p><span>출연:</span> 신혜선, 이준혁, 유태오</p>
+                      <p><span>크리에이터:</span> 정서경(극본), 박찬욱(제작)</p>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </li>
+
+            <li>
+              <a href="#">
+                <div class="img-wrapper">
+                  <img src="image/hot(5).jpg" alt="브리저튼">
+                </div>
+                <div class="info">
+                  <div class="info-header">
+                    <h4>브리저튼</h4>
+                    <div class="meta-tags">
+                      <span>2024</span>
+                      <span class="badge">시즌 3개</span>
+                      <span class="badge">18+</span>
+                      <span>시대극 로맨스</span>
+                    </div>
+                  </div>
+                  <div class="info-body">
+                    <p class="desc">
+                      런던 상류사회, 오랫동안 친구로 지내온 콜린 브리저튼과 페넬로피 페더링턴.
+                      페넬로피가 신랑감을 찾기로 결심하자 콜린은 그녀의 조력자로 나서지만,
+                      그 과정에서 두 사람 사이에 미묘한 감정이 싹트며 진정한 사랑의 의미를 깨닫게 된다.
+                    </p>
+                    <div class="details">
+                      <p><span>출연:</span> 니콜라 코클란, 루크 뉴턴, 조나단 베일리</p>
+                      <p><span>크리에이터:</span> 크리스 밴듀즌</p>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </li>
+
+            <li>
+              <a href="#">
+                <div class="img-wrapper">
+                  <img src="image/hot(6).jpg" alt="외교관">
+                </div>
+                <div class="info">
+                  <div class="info-header">
+                    <h4>외교관</h4>
+                    <div class="meta-tags">
+                      <span>2023</span>
+                      <span class="badge">시즌 2개</span>
+                      <span class="badge">15+</span>
+                      <span>정치 드라마</span>
+                    </div>
+                  </div>
+                  <div class="info-body">
+                    <p class="desc">
+                      국제적 위기가 닥친 상황에서 주영 미국 대사로 급히 부임하게 된 베테랑 외교관 케이트 와일러.
+                      전쟁을 막기 위한 치열한 정보전과 위태로운 결혼 생활 사이에서 그녀의 고군분투가 시작된다.
+                    </p>
+                    <div class="details">
+                      <p><span>출연:</span> 케리 러셀, 루퍼스 슈얼</p>
+                      <p><span>크리에이터:</span> 데보라 칸</p>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </li>
+
+            <li>
+              <a href="#">
+                <div class="img-wrapper">
+                  <img src="image/hot(7).jpg" alt="월간남친">
+                </div>
+                <div class="info">
+                  <div class="info-header">
+                    <h4>월간남친</h4>
+                    <div class="meta-tags">
+                      <span>2026</span>
+                      <span class="badge">시즌 1개</span>
+                      <span class="badge">12+</span>
+                      <span>로맨틱 코미디</span>
+                    </div>
+                  </div>
+                  <div class="info-body">
+                    <p class="desc">
+                      구독 서비스로 만나는 '이상형 남친'? 운명적인 사랑을 믿지 않는 여자 앞에 나타난 정기구독 연애 서비스.
+                      매달 배송되는 새로운 컨셉의 남친들과 펼쳐지는 달콤하고도 엉뚱한 연애 보고서.
+                    </p>
+                    <div class="details">
+                      <p><span>출연:</span> 로몬, 김혜윤</p>
+                      <p><span>크리에이터:</span> 한송이</p>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </li>
+
+            <li>
+              <a href="#">
+                <div class="img-wrapper">
+                  <img src="image/new(8).jpg" alt="연애 실험: 블라인드 러브 스웨덴편">
+                </div>
+                <div class="info">
+                  <div class="info-header">
+                    <h4>연애 실험: 블라인드 러브 스웨덴편</h4>
+                    <div class="meta-tags">
+                      <span>2024</span>
+                      <span class="badge">시즌 1개</span>
+                      <span class="badge">15+</span>
+                      <span>리얼리티 쇼</span>
+                    </div>
+                  </div>
+                  <div class="info-body">
+                    <p class="desc">
+                      외모를 보지 않고 목소리만으로 사랑에 빠질 수 있을까?
+                      스웨덴의 싱글들이 포드에 들어가 진정한 반려자를 찾기 위한 파격적인 실험에 동참한다.
+                    </p>
+                    <div class="details">
+                      <p><span>출연:</span> 예시카 알메네스(진행)</p>
+                      <p><span>크리에이터:</span> 크리스 코엘런</p>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </li>
+
+          </ul>
+        </div>
+      </section>
+
+      <section class="cont-2">
+        <div class="cont-2-inner">
+          <h3>신규 콘텐츠</h3>
+          <ul class="content">
+
+            <li>
+              <a href="#">
+                <div class="img-wrapper">
+                  <img src="image/new(1).jpg" alt="미스터리 수사단">
+                </div>
+                <div class="info">
+                  <div class="info-header">
+                    <h4>미스터리 수사단</h4>
+                    <div class="meta-tags">
+                      <span>2026</span>
+                      <span class="badge">시즌 1개</span>
+                      <span class="badge">15+</span>
+                      <span>리얼리티 시리즈</span>
+                    </div>
+                  </div>
+                  <div class="info-body">
+                    <p class="desc">
+                      여섯 명의 출연자들이 '미스터리 수사단'이 되어 초자연적인 사건들의 실마리를 쫓는다.
+                      팀워크와 두뇌를 총동원하여 기상천외한 미스터리의 진실을 파헤치고 임무를 완수하라!
+                    </p>
+                    <div class="details">
+                      <p><span>출연:</span> 이용진, 존박, 이은지, 혜리, 김도훈, 카리나</p>
+                      <p><span>크리에이터:</span> 정종연</p>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </li>
+
+            <li>
+              <a href="#">
+                <div class="img-wrapper">
+                  <img src="image/new(2).jpg" alt="라 프리메라 베스">
+                </div>
+                <div class="info">
+                  <div class="info-header">
+                    <h4>라 프리메라 베스</h4>
+                    <div class="meta-tags">
+                      <span>2023</span>
+                      <span class="badge">시즌 2개</span>
+                      <span class="badge">18+</span>
+                      <span>로맨스 드라마</span>
+                    </div>
+                  </div>
+                  <div class="info-body">
+                    <p class="desc">
+                      1970년대 콜롬비아, 남학생들만 가득한 학교에 한 여학생이 전학 오면서 모든 것이 변하기 시작한다.
+                      사랑과 우정, 그리고 시대의 금기에 도전하는 청춘들의 뜨거운 이야기.
+                    </p>
+                    <div class="details">
+                      <p><span>출연:</span> 에마누엘 레스트레포, 프란시스카 에스테베스</p>
+                      <p><span>크리에이터:</span> 다고 가르시아</p>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </li>
+
+            <li>
+              <a href="#">
+                <div class="img-wrapper">
+                  <img src="image/new(3).jpg" alt="파반느">
+                </div>
+                <div class="info">
+                  <div class="info-header">
+                    <h4>파반느</h4>
+                    <div class="meta-tags">
+                      <span>2026</span>
+                      <span class="badge">최신 등록</span>
+                      <span class="badge">12+</span>
+                      <span>감성 애니메이션</span>
+                    </div>
+                  </div>
+                  <div class="info-body">
+                    <p class="desc">
+                      오로라가 춤추는 밤바다를 배경으로 펼쳐지는 두 남녀의 애틋한 재회.
+                      잊고 있었던 기억의 조각들이 아름다운 선율과 함께 다시 살아나며 관객들의 마음을 어루만진다.
+                    </p>
+                    <div class="details">
+                      <p><span>출연:</span> 성우 박소이, 정지훈</p>
+                      <p><span>크리에이터:</span> 이지호</p>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </li>
+
+            <li>
+              <a href="#">
+                <div class="img-wrapper">
+                  <img src="image/new(5).jpg" alt="원피스">
+                </div>
+                <div class="info">
+                  <div class="info-header">
+                    <h4>원피스</h4>
+                    <div class="meta-tags">
+                      <span>2023</span>
+                      <span class="badge">TOP 10</span>
+                      <span class="badge">15+</span>
+                      <span>판타지 어드벤처</span>
+                    </div>
+                  </div>
+                  <div class="info-body">
+                    <p class="desc">
+                      전설의 해적왕이 남긴 대비보 '원피스'를 찾아 떠나는 루피와 밀짚모자 일당.
+                      광활한 바다 위에서 펼쳐지는 거대한 모험과 끈끈한 동료애를 실사로 완벽하게 재현했다.
+                    </p>
+                    <div class="details">
+                      <p><span>출연:</span> 이냐키 고도이, 아라타 마켄유, 에밀리 러드</p>
+                      <p><span>크리에이터:</span> 맷 오언스, 스티븐 마에다</p>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </li>
+
+            <li>
+              <a href="#">
+                <div class="img-wrapper">
+                  <img src="image/new(6).jpg" alt="나이트 에이전트">
+                </div>
+                <div class="info">
+                  <div class="info-header">
+                    <h4>나이트 에이전트</h4>
+                    <div class="meta-tags">
+                      <span>2023</span>
+                      <span class="badge">시즌 2개</span>
+                      <span class="badge">18+</span>
+                      <span>정치 스릴러</span>
+                    </div>
+                  </div>
+                  <div class="info-body">
+                    <p class="desc">
+                      백악관 지하에서 울리지 않는 전화를 지키는 FBI 요원 피터.
+                      어느 날 밤, 울려 퍼진 전화 한 통이 그를 국가를 뒤흔들 거대한 음모의 한복판으로 몰아넣는다.
+                    </p>
+                    <div class="details">
+                      <p><span>출연:</span> 가브리엘 바쏘, 루시앤 뷰캐넌</p>
+                      <p><span>크리에이터:</span> 숀 라이언</p>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </li>
+
+            <li>
+              <a href="#">
+                <div class="img-wrapper">
+                  <img src="image/new(7).jpg" alt="리디아 포에트의 법">
+                </div>
+                <div class="info">
+                  <div class="info-header">
+                    <h4>리디아 포에트의 법</h4>
+                    <div class="meta-tags">
+                      <span>2023</span>
+                      <span class="badge">공개 예정</span>
+                      <span class="badge">15+</span>
+                      <span>시대극/범죄</span>
+                    </div>
+                  </div>
+                  <div class="info-body">
+                    <p class="desc">
+                      19세기 이탈리아, 여성의 법조계 진출이 금지되었던 시대.
+                      최초의 여성 변호사를 꿈꾸는 리디아 포에트가 날카로운 통찰력으로 의문의 살인 사건들을 해결한다.
+                    </p>
+                    <div class="details">
+                      <p><span>출연:</span> 마틸다 데 안젤리스, 에두아르도 스카르페타</p>
+                      <p><span>크리에이터:</span> 귀도 이우쿨라노</p>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </li>
+
+            <li>
+              <a href="#">
+                <div class="img-wrapper">
+                  <img src="image/new(8).jpg" alt="연애 실험: 블라인드 러브 스웨덴편">
+                </div>
+                <div class="info">
+                  <div class="info-header">
+                    <h4>연애 실험: 블라인드 러브 스웨덴편</h4>
+                    <div class="meta-tags">
+                      <span>2024</span>
+                      <span class="badge">시즌 1개</span>
+                      <span class="badge">15+</span>
+                      <span>리얼리티 쇼</span>
+                    </div>
+                  </div>
+                  <div class="info-body">
+                    <p class="desc">
+                      외모를 보지 않고 목소리만으로 사랑에 빠질 수 있을까?
+                      스웨덴의 싱글들이 포드에 들어가 진정한 반려자를 찾기 위한 파격적인 실험에 동참한다.
+                    </p>
+                    <div class="details">
+                      <p><span>출연:</span> 예시카 알메네스(진행)</p>
+                      <p><span>크리에이터:</span> 크리스 코엘런</p>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </li>
+
+            <li>
+              <a href="#">
+                <div class="img-wrapper">
+                  <img src="image/new(9).jpg" alt="브리저튼">
+                </div>
+                <div class="info">
+                  <div class="info-header">
+                    <h4>브리저튼</h4>
+                    <div class="meta-tags">
+                      <span>2024</span>
+                      <span class="badge">새로운 에피소드</span>
+                      <span class="badge">18+</span>
+                      <span>시대극 로맨스</span>
+                    </div>
+                  </div>
+                  <div class="info-body">
+                    <p class="desc">
+                      런던 상류사회의 화려한 무도회와 그 뒤에 숨겨진 은밀한 스캔들.
+                      브리저튼 가문의 여덟 남매가 진실한 사랑과 행복을 찾아가는 과정을 매혹적으로 그려낸다.
+                    </p>
+                    <div class="details">
+                      <p><span>출연:</span> 니콜라 코클란, 루크 뉴턴, 조나단 베일리</p>
+                      <p><span>크리에이터:</span> 크리스 밴듀즌</p>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </li>
+
+          </ul>
+        </div>
+      </section>
+
+      <section class="cont-3">
+        <div class="cont-3-inner">
+          <h3>꾸준히 사랑받는 콘텐츠</h3>
+          <ul class="content">
+
+            <li>
+              <a href="#">
+                <div class="img-wrapper">
+                  <img src="image/steady(1).jpg" alt="중증외상센터">
+                </div>
+                <div class="info">
+                  <div class="info-header">
+                    <h4>중증외상센터</h4>
+                    <div class="meta-tags">
+                      <span>2025</span>
+                      <span class="badge">시즌 1개</span>
+                      <span class="badge">15+</span>
+                      <span>의학 드라마</span>
+                    </div>
+                  </div>
+                  <div class="info-body">
+                    <p class="desc">
+                      사선에 선 환자들을 살리기 위해 물불 가리지 않는 외과 전문의 백강혁.
+                      인력도 장비도 부족한 중증외상센터에서 팀원들과 함께 생명의 한계선에 도전하는 치열한 기록.
+                    </p>
+                    <div class="details">
+                      <p><span>출연:</span> 주지훈, 추영우, 윤경호</p>
+                      <p><span>크리에이터:</span> 최태강, 이도윤</p>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </li>
+
+            <li>
+              <a href="#">
+                <div class="img-wrapper">
+                  <img src="image/steady(2).jpg" alt="살인자ㅇ난감">
+                </div>
+                <div class="info">
+                  <div class="info-header">
+                    <h4>살인자ㅇ난감</h4>
+                    <div class="meta-tags">
+                      <span>2024</span>
+                      <span class="badge">시즌 1개</span>
+                      <span class="badge">18+</span>
+                      <span>범죄 스릴러</span>
+                    </div>
+                  </div>
+                  <div class="info-body">
+                    <p class="desc">
+                      우발적인 첫 살인 이후, 죽인 사람들이 모두 악인이라는 사실을 깨닫게 된 평범한 대학생 이탕.
+                      그를 끈질기게 추적하는 형사 장난감 사이의 쫓고 쫓기는 기묘한 대립이 시작된다.
+                    </p>
+                    <div class="details">
+                      <p><span>출연:</span> 최우식, 손석구, 이희준</p>
+                      <p><span>크리에이터:</span> 이창희, 김다민</p>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </li>
+
+            <li>
+              <a href="#">
+                <div class="img-wrapper">
+                  <img src="image/steady(3).jpg" alt="케이팝 데몬헌터스">
+                </div>
+                <div class="info">
+                  <div class="info-header">
+                    <h4>케이팝 데몬헌터스</h4>
+                    <div class="meta-tags">
+                      <span>2025</span>
+                      <span class="badge">최신 등록</span>
+                      <span class="badge">12+</span>
+                      <span>판타지 애니메이션</span>
+                    </div>
+                  </div>
+                  <div class="info-body">
+                    <p class="desc">
+                      화려한 무대 뒤, 사실은 세상을 위협하는 악귀들을 사냥하는 헌터였던 5인조 걸그룹.
+                      완벽한 칼군무와 강력한 마법으로 소음 속에 숨어든 악의 기운을 잠재우는 스타일리시 액션.
+                    </p>
+                    <div class="details">
+                      <p><span>제작:</span> 소니 픽처스 애니메이션</p>
+                      <p><span>크리에이터:</span> 매기 캉, 크리스 아펠한스</p>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </li>
+
+            <li>
+              <a href="#">
+                <div class="img-wrapper">
+                  <img src="image/steady(4).jpg" alt="라스트 킹덤">
+                </div>
+                <div class="info">
+                  <div class="info-header">
+                    <h4>라스트 킹덤</h4>
+                    <div class="meta-tags">
+                      <span>2022</span>
+                      <span class="badge">시즌 5개</span>
+                      <span class="badge">18+</span>
+                      <span>역사 드라마</span>
+                    </div>
+                  </div>
+                  <div class="info-body">
+                    <p class="desc">
+                      바이킹의 손에 자라난 색슨족의 후예 우트레드.
+                      자신의 뿌리와 길러준 정 사이에서 갈등하며 분열된 잉글랜드를 하나로 합치기 위한 거대한 전쟁에 뛰어든다.
+                    </p>
+                    <div class="details">
+                      <p><span>출연:</span> 알렉산더 드레이먼, 데이비드 도우슨</p>
+                      <p><span>크리에이터:</span> 스티븐 부차드</p>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </li>
+
+            <li>
+              <a href="#">
+                <div class="img-wrapper">
+                  <img src="image/steady(5).jpg" alt="킹덤">
+                </div>
+                <div class="info">
+                  <div class="info-header">
+                    <h4>킹덤</h4>
+                    <div class="meta-tags">
+                      <span>2020</span>
+                      <span class="badge">시즌 2개</span>
+                      <span class="badge">18+</span>
+                      <span>시대극 스릴러</span>
+                    </div>
+                  </div>
+                  <div class="info-body">
+                    <p class="desc">
+                      죽었던 왕이 살아나자 반역자로 몰린 왕세자 창.
+                      조선의 끝에서 굶주림 끝에 괴물이 되어버린 이들의 비밀을 파헤치며 나라를 구하기 위한 사투를 벌인다.
+                    </p>
+                    <div class="details">
+                      <p><span>출연:</span> 주지훈, 류승룡, 배두나</p>
+                      <p><span>크리에이터:</span> 김성훈, 김은희</p>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </li>
+
+            <li>
+              <a href="#">
+                <div class="img-wrapper">
+                  <img src="image/steady(6).jpg" alt="악연">
+                </div>
+                <div class="info">
+                  <div class="info-header">
+                    <h4>악연</h4>
+                    <div class="meta-tags">
+                      <span>2025</span>
+                      <span class="badge">공개 예정</span>
+                      <span class="badge">18+</span>
+                      <span>범죄 잔혹극</span>
+                    </div>
+                  </div>
+                  <div class="info-body">
+                    <p class="desc">
+                      벗어나고 싶어도 결코 끊어지지 않는 지독한 운명의 굴레.
+                      각자의 욕망과 사연으로 얽힌 인물들이 예상치 못한 사건에 휘말리며 서로를 파멸로 몰고 가는 서스펜스.
+                    </p>
+                    <div class="details">
+                      <p><span>출연:</span> 박해수, 신민아, 이광수</p>
+                      <p><span>크리에이터:</span> 이일형</p>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </li>
+
+            <li>
+              <a href="#">
+                <div class="img-wrapper">
+                  <img src="image/steady(7).jpg" alt="비스타즈">
+                </div>
+                <div class="info">
+                  <div class="info-header">
+                    <h4>비스타즈</h4>
+                    <div class="meta-tags">
+                      <span>2021</span>
+                      <span class="badge">시즌 2개</span>
+                      <span class="badge">15+</span>
+                      <span>애니메이션 시리즈</span>
+                    </div>
+                  </div>
+                  <div class="info-body">
+                    <p class="desc">
+                      육식동물과 초식동물이 공존하는 세계.
+                      거대한 늑대 레고시가 작고 연약한 토끼 하루에게 품게 된 감정은 포식자의 본능일까, 아니면 순수한 사랑일까?
+                    </p>
+                    <div class="details">
+                      <p><span>제작:</span> 오렌지 스튜디오</p>
+                      <p><span>크리에이터:</span> 이타가키 파루</p>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </li>
+
+            <li>
+              <a href="#">
+                <div class="img-wrapper">
+                  <img src="image/steady(8).jpg" alt="더 글로리">
+                </div>
+                <div class="info">
+                  <div class="info-header">
+                    <h4>더 글로리</h4>
+                    <div class="meta-tags">
+                      <span>2023</span>
+                      <span class="badge">시즌 1개</span>
+                      <span class="badge">18+</span>
+                      <span>복수 드라마</span>
+                    </div>
+                  </div>
+                  <div class="info-body">
+                    <p class="desc">
+                      고등학교 시절 참혹한 학교 폭력을 당했던 문동은.
+                      가해자들의 삶을 서서히 조여가며 일생을 건 치밀한 복수를 실행하는 그녀의 차갑고도 처절한 여정.
+                    </p>
+                    <div class="details">
+                      <p><span>출연:</span> 송혜교, 이도현, 임지연</p>
+                      <p><span>크리에이터:</span> 안길호, 김은숙</p>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </li>
+
+          </ul>
+        </div>
+      </section>
+
+    </div>
+  </main>
+
+  <footer id="footer">
+    <address class="footer-inner">
+      <div class="footer-1">
+        <a href="index.html">
+          <img src="image/Netflix_2015_logo.svg" alt="">
+        </a>
+      </div>
+      <div class="footer-2">
+        넷플릭스서비시스코리아 유한회사 <br>
+        통신판매업신고번호: 제2018-서울종로-0426호 <br>
+        대표: 레지널드 숀 톰프슨 <br>
+        이메일 주소: korea@netflix.com <br>
+        주소: 대한민국 서울특별시 종로구 우정국로 26, 센트로폴리스 A동 20층 <br>
+        사업자등록번호: 165-87-00119 <br>
+        클라우드 호스팅: Amazon Web Services Inc. <br><br>
+        본 프로젝트는 어떠한 상업적 용도로도 사용되지 않음을 밝힙니다.
+      </div>
+      <div class="footer-3">
+        <ul class="util">
+          <li><a href="#">이용약관</a></li>
+          <li><a href="#">개인정보</a></li>
+          <li><a href="#">쿠키설정</a></li>
+          <li><a href="#">회사정보</a></li>
+        </ul>
+      </div>
+      <div class="footer-4">
+        <ul class="sns-wrap">
+          <li>
+            <a href="#">
+              <i class="fab fa-youtube-square"></i>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="fab fa-instagram-square"></i>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="fab fa-facebook-square"></i>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="fab fa-twitter-square"></i>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </address>
+  </footer>
+</body>
+
+</html>

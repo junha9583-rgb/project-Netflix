@@ -1,0 +1,49 @@
+/* 2026-01-19 v3 */
+@charset "UTF-8";
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+body {
+  line-height: 1;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+h1, h2, h3, h4, h5, h6,
+b, strong {
+  font-weight: 400;
+}
+
+i, em, address, cite {
+  font-style: normal;
+}
+
+.love::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.blind {
+  display: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+input, button, select, textarea {
+  font: inherit;
+}

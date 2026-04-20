@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NETFLIX</title>
+  <link rel="shortcut icon" href="image/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/tablet.css" media="screen and (min-width: 780px) and (max-width: 1280px)">
+  <link rel="stylesheet" href="css/mobile.css" media="screen and (max-width: 779px)">
+  <script src="js/jquery-1.12.4.min.js"></script>
+  <script src="js/jquery-ui.min.js"></script>
+  <script src="js/index.js"></script>
+</head>
+
+<body>
+
+  <header id="header">
+    <div class="header-inner">
+      <div class="header-top">
+        <h1>
+          <a href="index.html">
+            <img src="image/Netflix_2015_logo.svg" alt="NEFLIX">
+          </a>
+        </h1>
+        <button class="login-btn">로그인</button>
+      </div>
+      <div class="text-box">
+        <h2>
+          <span>당신이 찾는</span>
+          <span>모든 이야기.</span>
+        </h2>
+        <a href="specific.html" class="start-btn">시작하기</a>
+        <img src="image/arrow.png" alt="">
+      </div>
+    </div>
+  </header>
+
+  <aside id="aside" class="area">
+    <h2 class="blind">Search</h2>
+
+    <nav class="gnb">
+      <a href="search.html">검색</a>
+      <a href="specific.html">콘텐츠</a>
+      <a href="#">이벤트</a>
+      <a href="#">커뮤니티</a>
+      <a href="#">문의</a>
+    </nav>
+
+    <button class="menu-btn" aria-label="메뉴 열기">
+      <svg class="hamburger" viewBox="0 0 100 100" width="40" height="40">
+        <line class="line top" x1="20" y1="35" x2="80" y2="35" />
+        <line class="line middle" x1="20" y1="50" x2="80" y2="50" />
+        <line class="line bottom" x1="20" y1="65" x2="80" y2="65" />
+      </svg>
+    </button>
+
+  </aside>
+
+  <main id="main">
+
+    <section class="cont-1">
+      <div class="cont-1-inner">
+        <h3>최근 본 작품</h3>
+        <div class="stack-container">
+          <ul class="recent-list">
+            <li><a href="#"><img src="image/continue(1).jpg" alt=""></a></li>
+            <li><a href="#"><img src="image/continue(2).jpg" alt=""></a></li>
+            <li><a href="#"><img src="image/continue(3).jpg" alt=""></a></li>
+            <li><a href="#"><img src="image/continue(4).jpg" alt=""></a></li>
+            <li><a href="#"><img src="image/continue(5).jpg" alt=""></a></li>
+          </ul>
+        </div>
+        <div class="recent-progress">
+          <div class="bar"></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="cont-2">
+      <div class="cont-2-inner">
+        <h3>지금 뜨는 콘텐츠</h3>
+        <ul class="content">
+          <li><a href="#"><img src="image/hot(1).jpg" alt=""></a></li>
+          <li><a href="#"><img src="image/hot(2).jpg" alt=""></a></li>
+          <li><a href="#"><img src="image/hot(3).jpg" alt=""></a></li>
+          <li><a href="#"><img src="image/hot(4).jpg" alt=""></a></li>
+          <li><a href="#"><img src="image/hot(5).jpg" alt=""></a></li>
+          <li><a href="#"><img src="image/hot(6).jpg" alt=""></a></li>
+          <li><a href="#"><img src="image/hot(7).jpg" alt=""></a></li>
+          <li><a href="#"><img src="image/hot(8).jpg" alt=""></a></li>
+          <li><a href="#"><img src="image/hot(9).jpg" alt=""></a></li>
+          <li><a href="#"><img src="image/hot(10).jpg" alt=""></a></li>
+        </ul>
+        <div class="indicator"></div>
+      </div>
+      <div class="btn-wrap">
+        <button class="prev"></button>
+        <button class="next"></button>
+      </div>
+    </section>
+
+    <section class="cont-3">
+      <div class="cont-3-inner">
+        <h3>신규 콘텐츠</h3>
+        <button class="cube-btn">랜덤 추천</button>
+
+        <div class="modal-overlay" id="cube-modal">
+          <div class="modal-window">
+            <button class="modal-close">&times;</button>
+            <div class="modal-body">
+              <div class="modal-img-area"></div>
+              <div class="modal-info-area">
+                <h4 class="m-title"></h4>
+                <div class="m-meta"></div>
+                <p class="m-desc"></p>
+                <div class="m-details"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <ul class="content cube">
+
+          <li class="face front">
+            <a href="#">
+              <div class="img-wrapper">
+                <img src="image/new(1).jpg" alt="미스터리 수사단">
+              </div>
+              <div class="info">
+                <div class="info-header">
+                  <h4>미스터리 수사단</h4>
+                  <div class="meta-tags">
+                    <span>2026</span>
+                    <span class="badge">시즌 1개</span>
+                    <span class="badge">15+</span>
+                    <span>리얼리티 시리즈</span>
+                  </div>
+                </div>
+                <div class="info-body">
+                  <p class="desc">
+                    여섯 명의 출연자들이 '미스터리 수사단'이 되어 초자연적인 사건들의 실마리를 쫓는다.
+                    팀워크와 두뇌를 총동원하여 기상천외한 미스터리의 진실을 파헤치고 임무를 완수하라!
+                  </p>
+                  <div class="details">
+                    <p><span>출연:</span> 이용진, 존박, 이은지, 혜리, 김도훈, 카리나</p>
+                    <p><span>크리에이터:</span> 정종연</p>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </li>
+
+          <li class="face back">
+            <a href="#">
+              <div class="img-wrapper">
+                <img src="image/new(2).jpg" alt="라 프리메라 베스">
+              </div>
+              <div class="info">
+                <div class="info-header">
+                  <h4>라 프리메라 베스</h4>
+                  <div class="meta-tags">
+                    <span>2023</span>
+                    <span class="badge">시즌 2개</span>
+                    <span class="badge">18+</span>
+                    <span>로맨스 드라마</span>
+                  </div>
+                </div>
+                <div class="info-body">
+                  <p class="desc">
+                    1970년대 콜롬비아, 남학생들만 가득한 학교에 한 여학생이 전학 오면서 모든 것이 변하기 시작한다.
+                    사랑과 우정, 그리고 시대의 금기에 도전하는 청춘들의 뜨거운 이야기.
+                  </p>
+                  <div class="details">
+                    <p><span>출연:</span> 에마누엘 레스트레포, 프란시스카 에스테베스</p>
+                    <p><span>크리에이터:</span> 다고 가르시아</p>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </li>
+
+          <li class="face right">
+            <a href="#">
+              <div class="img-wrapper">
+                <img src="image/new(3).jpg" alt="파반느">
+              </div>
+              <div class="info">
+                <div class="info-header">
+                  <h4>파반느</h4>
+                  <div class="meta-tags">
+                    <span>2026</span>
+                    <span class="badge">최신 등록</span>
+                    <span class="badge">12+</span>
+                    <span>감성 애니메이션</span>
+                  </div>
+                </div>
+                <div class="info-body">
+                  <p class="desc">
+                    오로라가 춤추는 밤바다를 배경으로 펼쳐지는 두 남녀의 애틋한 재회.
+                    잊고 있었던 기억의 조각들이 아름다운 선율과 함께 다시 살아나며 관객들의 마음을 어루만진다.
+                  </p>
+                  <div class="details">
+                    <p><span>출연:</span> 성우 박소이, 정지훈</p>
+                    <p><span>크리에이터:</span> 이지호</p>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </li>
+
+          <li class="face left">
+            <a href="#">
+              <div class="img-wrapper">
+                <img src="image/new(5).jpg" alt="원피스">
+              </div>
+              <div class="info">
+                <div class="info-header">
+                  <h4>원피스</h4>
+                  <div class="meta-tags">
+                    <span>2023</span>
+                    <span class="badge">TOP 10</span>
+                    <span class="badge">15+</span>
+                    <span>판타지 어드벤처</span>
+                  </div>
+                </div>
+                <div class="info-body">
+                  <p class="desc">
+                    전설의 해적왕이 남긴 대비보 '원피스'를 찾아 떠나는 루피와 밀짚모자 일당.
+                    광활한 바다 위에서 펼쳐지는 거대한 모험과 끈끈한 동료애를 실사로 완벽하게 재현했다.
+                  </p>
+                  <div class="details">
+                    <p><span>출연:</span> 이냐키 고도이, 아라타 마켄유, 에밀리 러드</p>
+                    <p><span>크리에이터:</span> 맷 오언스, 스티븐 마에다</p>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </li>
+
+          <li class="face top">
+            <a href="#">
+              <div class="img-wrapper">
+                <img src="image/new(6).jpg" alt="나이트 에이전트">
+              </div>
+              <div class="info">
+                <div class="info-header">
+                  <h4>나이트 에이전트</h4>
+                  <div class="meta-tags">
+                    <span>2023</span>
+                    <span class="badge">시즌 2개</span>
+                    <span class="badge">18+</span>
+                    <span>정치 스릴러</span>
+                  </div>
+                </div>
+                <div class="info-body">
+                  <p class="desc">
+                    백악관 지하에서 울리지 않는 전화를 지키는 FBI 요원 피터.
+                    어느 날 밤, 울려 퍼진 전화 한 통이 그를 국가를 뒤흔들 거대한 음모의 한복판으로 몰아넣는다.
+                  </p>
+                  <div class="details">
+                    <p><span>출연:</span> 가브리엘 바쏘, 루시앤 뷰캐넌</p>
+                    <p><span>크리에이터:</span> 숀 라이언</p>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </li>
+
+          <li class="face bottom">
+            <a href="#">
+              <div class="img-wrapper">
+                <img src="image/new(7).jpg" alt="리디아 포에트의 법">
+              </div>
+              <div class="info">
+                <div class="info-header">
+                  <h4>리디아 포에트의 법</h4>
+                  <div class="meta-tags">
+                    <span>2023</span>
+                    <span class="badge">공개 예정</span>
+                    <span class="badge">15+</span>
+                    <span>시대극/범죄</span>
+                  </div>
+                </div>
+                <div class="info-body">
+                  <p class="desc">
+                    19세기 이탈리아, 여성의 법조계 진출이 금지되었던 시대.
+                    최초의 여성 변호사를 꿈꾸는 리디아 포에트가 날카로운 통찰력으로 의문의 살인 사건들을 해결한다.
+                  </p>
+                  <div class="details">
+                    <p><span>출연:</span> 마틸다 데 안젤리스, 에두아르도 스카르페타</p>
+                    <p><span>크리에이터:</span> 귀도 이우쿨라노</p>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </li>
+
+          <li>
+            <a href="#">
+              <div class="img-wrapper">
+                <img src="image/new(8).jpg" alt="연애 실험: 블라인드 러브 스웨덴편">
+              </div>
+              <div class="info">
+                <div class="info-header">
+                  <h4>연애 실험: 블라인드 러브 스웨덴편</h4>
+                  <div class="meta-tags">
+                    <span>2024</span>
+                    <span class="badge">시즌 1개</span>
+                    <span class="badge">15+</span>
+                    <span>리얼리티 쇼</span>
+                  </div>
+                </div>
+                <div class="info-body">
+                  <p class="desc">
+                    외모를 보지 않고 목소리만으로 사랑에 빠질 수 있을까?
+                    스웨덴의 싱글들이 포드에 들어가 진정한 반려자를 찾기 위한 파격적인 실험에 동참한다.
+                  </p>
+                  <div class="details">
+                    <p><span>출연:</span> 예시카 알메네스(진행)</p>
+                    <p><span>크리에이터:</span> 크리스 코엘런</p>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </li>
+
+          <li>
+            <a href="#">
+              <div class="img-wrapper">
+                <img src="image/new(9).jpg" alt="브리저튼">
+              </div>
+              <div class="info">
+                <div class="info-header">
+                  <h4>브리저튼</h4>
+                  <div class="meta-tags">
+                    <span>2024</span>
+                    <span class="badge">새로운 에피소드</span>
+                    <span class="badge">18+</span>
+                    <span>시대극 로맨스</span>
+                  </div>
+                </div>
+                <div class="info-body">
+                  <p class="desc">
+                    런던 상류사회의 화려한 무도회와 그 뒤에 숨겨진 은밀한 스캔들.
+                    브리저튼 가문의 여덟 남매가 진실한 사랑과 행복을 찾아가는 과정을 매혹적으로 그려낸다.
+                  </p>
+                  <div class="details">
+                    <p><span>출연:</span> 니콜라 코클란, 루크 뉴턴, 조나단 베일리</p>
+                    <p><span>크리에이터:</span> 크리스 밴듀즌</p>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </li>
+
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <footer id="footer">
+    <address class="footer-inner">
+      <div class="footer-1">
+        <a href="index.html">
+          <img src="image/Netflix_2015_logo.svg" alt="">
+        </a>
+      </div>
+      <div class="footer-2">
+        넷플릭스서비시스코리아 유한회사 <br>
+        통신판매업신고번호: 제2018-서울종로-0426호 <br>
+        대표: 레지널드 숀 톰프슨 <br>
+        이메일 주소: korea@netflix.com <br>
+        주소: 대한민국 서울특별시 종로구 우정국로 26, 센트로폴리스 A동 20층 <br>
+        사업자등록번호: 165-87-00119 <br>
+        클라우드 호스팅: Amazon Web Services Inc. <br><br>
+        본 프로젝트는 어떠한 상업적 용도로도 사용되지 않음을 밝힙니다.
+      </div>
+      <div class="footer-3">
+        <ul class="util">
+          <li><a href="#">이용약관</a></li>
+          <li><a href="#">개인정보</a></li>
+          <li><a href="#">쿠키설정</a></li>
+          <li><a href="#">회사정보</a></li>
+        </ul>
+      </div>
+      <div class="footer-4">
+        <ul class="sns-wrap">
+          <li>
+            <a href="#">
+              <i class="fab fa-youtube-square"></i>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="fab fa-instagram-square"></i>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="fab fa-facebook-square"></i>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="fab fa-twitter-square"></i>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </address>
+  </footer>
+</body>
+
+</html>

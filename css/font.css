@@ -1,0 +1,26 @@
+@charset "UTF-8";
+
+@font-face {
+  font-family: Base;
+  src: url(fonts/NotoSansKR-Regular.ttf);
+}
+
+@font-face {
+  font-family: BaseB;
+  src: url(fonts/NotoSansKR-Bold.ttf);
+}
+
+@font-face {
+  font-family: Title;
+  src: url(fonts/NotoSerifKR-Bold.ttf);
+}
+
+@font-face {
+  font-family: En;
+  src: url(fonts/Cinzel-Regular.ttf);
+}
+
+@font-face {
+  font-family: EnB;
+  src: url(fonts/Cinzel-Bold.ttf);
+}

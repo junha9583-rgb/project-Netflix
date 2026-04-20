@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NETFLIX</title>
+  <link rel="shortcut icon" href="image/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="css/search.css">
+  <link rel="stylesheet" href="css/tablet.css" media="screen and (min-width: 780px) and (max-width: 1280px)">
+  <link rel="stylesheet" href="css/mobile.css" media="screen and (max-width: 779px)">
+  <script src="js/jquery-1.12.4.min.js"></script>
+  <script src="js/jquery-ui.min.js"></script>
+  <script src="js/search.js"></script>
+</head>
+
+<body>
+
+  <header id="header">
+    <div class="header-inner">
+      <div class="header-top">
+        <h1>
+          <a href="index.html">
+            <img src="image/Netflix_2015_logo.svg" alt="NEFLIX">
+          </a>
+        </h1>
+        <button class="login-btn">로그인</button>
+      </div>
+
+    </div>
+  </header>
+
+  <aside id="aside" class="area">
+    <h2 class="blind">Search</h2>
+
+    <nav class="gnb">
+      <a href="search.html">검색</a>
+      <a href="specific.html">콘텐츠</a>
+      <a href="#">이벤트</a>
+      <a href="#">커뮤니티</a>
+      <a href="#">문의</a>
+    </nav>
+
+    <button class="menu-btn" aria-label="메뉴 열기">
+      <svg class="hamburger" viewBox="0 0 100 100" width="40" height="40">
+        <line class="line top" x1="20" y1="35" x2="80" y2="35" />
+        <line class="line middle" x1="20" y1="50" x2="80" y2="50" />
+        <line class="line bottom" x1="20" y1="65" x2="80" y2="65" />
+      </svg>
+    </button>
+
+  </aside>
+
+  <main id="main">
+    <div class="main-inner">
+
+      <section class="cont-1">
+
+        <button class="close-btn">
+          <span></span>
+          <span></span>
+        </button>
+
+        <div class="hot-cont">
+          <div class="arrow-wrap">
+            <button class="slide-btn">
+              <img src="image/arrow.png" alt="">
+            </button>
+          </div>
+          <h2>오직 <a href="index.html">넷플릭스</a>에서.</h2>
+          <div class="video-wrap">
+            <video src="video/preview.mp4" autoplay muted loop></video>
+          </div>
+        </div>
+      </section>
+
+      <section class="cont-2">
+        <div class="search-box">
+          <input type="text" id="search" placeholder="검색어" autofocus>
+          <button class="search-btn">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </button>
+        </div>
+        <div class="tag-wrap">
+
+          <div class="tab-menu">
+            <button type="button" class="tab-btn active" data-tab="atmos">분위기</button>
+            <button type="button" class="tab-btn" data-tab="genre">장르</button>
+            <button type="button" class="tab-btn" data-tab="theme">테마</button>
+          </div>
+
+          <div class="tab-container">
+            <div id="atmos" class="tab-pane active">
+              <ul class="tag-list atmos-list">
+                <li><a href="#">아무 생각 없이 웃고 싶은</a></li>
+                <li><a href="#">한 번 보면 멈출 수 없는 시리즈물</a></li>
+                <li><a href="#">주말 밤, 맥주와 함께 즐기는 액션</a></li>
+                <li><a href="#">포스터만 봐도 소름 돋는 스릴러</a></li>
+                <li><a href="#">애니 덕후들이 뽑은 인생 명작</a></li>
+                <li><a href="#">위로가 필요한</a></li>
+                <li><a href="#">밥 먹을 때 가볍게 보기 좋은 '밥친구' 예능</a></li>
+                <li><a href="#">답답한 가슴이 뻥 뚫리는 사이다 복수극</a></li>
+              </ul>
+            </div>
+
+            <div id="genre" class="tab-pane">
+              <ul class="tag-list">
+                <li><a href="#">영화</a></li>
+                <li><a href="#">단편 영화</a></li>
+                <li><a href="#">독립/예술 영화</a></li>
+                <li><a href="#">드라마</a></li>
+                <li><a href="#">숏폼 드라마</a></li>
+                <li><a href="#">웹드라마</a></li>
+                <li><a href="#">오리지널 시리즈</a></li>
+                <li><a href="#">애니메이션</a></li>
+                <li><a href="#">극장판 애니메이션</a></li>
+                <li><a href="#">TVA</a></li>
+                <li><a href="#">예능</a></li>
+                <li><a href="#">리얼리티 쇼</a></li>
+                <li><a href="#">팟캐스트</a></li>
+                <li><a href="#">다큐멘터리</a></li>
+                <li><a href="#">브이로그</a></li>
+                <li><a href="#">웹콘텐츠</a></li>
+                <li><a href="#">공연 실황</a></li>
+                <li><a href="#">브랜드 필름</a></li>
+              </ul>
+            </div>
+
+            <div id="theme" class="tab-pane">
+              <ul class="tag-list">
+                <li><a href="#">액션</a></li>
+                <li><a href="#">누아르</a></li>
+                <li><a href="#">오컬트</a></li>
+                <li><a href="#">로맨스</a></li>
+                <li><a href="#">치유/힐링</a></li>
+                <li><a href="#">청춘/성장</a></li>
+                <li><a href="#">하이틴</a></li>
+                <li><a href="#">로맨틱 코미디</a></li>
+                <li><a href="#">스릴러</a></li>
+                <li><a href="#">코미디</a></li>
+                <li><a href="#">오피스</a></li>
+                <li><a href="#">정치/법정물</a></li>
+                <li><a href="#">메디컬</a></li>
+                <li><a href="#">공포</a></li>
+                <li><a href="#">판타지</a></li>
+                <li><a href="#">무협</a></li>
+                <li><a href="#">SF</a></li>
+                <li><a href="#">범죄</a></li>
+                <li><a href="#">서부극</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <div id="result-modal" class="modal">
+    <div class="modal-content">
+      <button class="modal-close">X</button>
+      <h3 class="category-title">장르 이름</h3>
+      <div class="poster-slider">
+        <ul class="poster-list">
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <footer id="footer">
+    <address class="footer-inner">
+      <div class="footer-1">
+        <a href="index.html">
+          <img src="image/Netflix_2015_logo.svg" alt="">
+        </a>
+      </div>
+      <div class="footer-2">
+        넷플릭스서비시스코리아 유한회사 <br>
+        통신판매업신고번호: 제2018-서울종로-0426호 <br>
+        대표: 레지널드 숀 톰프슨 <br>
+        이메일 주소: korea@netflix.com <br>
+        주소: 대한민국 서울특별시 종로구 우정국로 26, 센트로폴리스 A동 20층 <br>
+        사업자등록번호: 165-87-00119 <br>
+        클라우드 호스팅: Amazon Web Services Inc. <br><br>
+        본 프로젝트는 어떠한 상업적 용도로도 사용되지 않음을 밝힙니다.
+      </div>
+      <div class="footer-3">
+        <ul class="util">
+          <li><a href="#">이용약관</a></li>
+          <li><a href="#">개인정보</a></li>
+          <li><a href="#">쿠키설정</a></li>
+          <li><a href="#">회사정보</a></li>
+        </ul>
+      </div>
+      <div class="footer-4">
+        <ul class="sns-wrap">
+          <li>
+            <a href="#">
+              <i class="fab fa-youtube-square"></i>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="fab fa-instagram-square"></i>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="fab fa-facebook-square"></i>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="fab fa-twitter-square"></i>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </address>
+  </footer>
+</body>
+
+</html>
